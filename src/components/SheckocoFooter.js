@@ -1,9 +1,10 @@
 import React from "react"
+import Typography from "@material-ui/core/Typography"
 
 function SheckocoFooter() {
   return (
     <footer>
-      <p>Copyright 2020 Sheckoco Global LLC</p>
+      <Typography variant='h6'>Copyright 2020 Sheckoco Global LLC</Typography>
     </footer>
   );
 }

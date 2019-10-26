@@ -1,22 +1,27 @@
 import React from "react"
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import AppBar from "@material-ui/core/AppBar"
+import ToolBar from "@material-ui/core/Toolbar"
+import Button from "@material-ui/core/Button"
+import IconButton from "@material-ui/core/IconButton"
+import MenuIcon from "@material-ui/icons/Menu"
+import HelpIcon from "@material-ui/icons/Help"
 
-import AppBar from "material-ui/AppBar"
-import Toolbar from "material-ui/Toolbar/Toolbar"
-import RaisedButton from "material-ui/RaisedButton"
 
 function SheckocoHeader() {
   return (
   <header>
-      <h1>Sheckoco Investments</h1>
-      <MuiThemeProvider>
-        <AppBar>
-          
-           <RaisedButton color="inherit" primary={true}>Login</RaisedButton>
+    <AppBar>
+      <ToolBar>
+      <IconButton><MenuIcon /></IconButton>
+      <h3>Sheckoco Investments</h3>
+      <IconButton><HelpIcon /> </IconButton>
+      <Button variant="contained" color="primary">
+        Login
+      </Button>
+      </ToolBar>
       
-        </AppBar>
-      </MuiThemeProvider>
+    </AppBar>
   </header>
   )
 };
