@@ -1,11 +1,35 @@
-import React from "react"
-import Paper from "@material-ui/core/Paper"
+import React, {Component} from "react"
+import Portfolio from "./Portfolio"
+import StockQuotes from "./StockQuotes"
+import Trade from "./Trade"
+import Transfer from "./Transfer"
+import BillPay from "./BillPay"
 
-function SheckocoMainContent() 
+class SheckocoMainContent extends Component 
 {
-  return (
-    <main>
-      <Paper>
+  constructor(props)
+  {
+    super(props)
+
+  }
+  render () {
+    return (
+      <main>
+       {this.props.showPortfolio == "true" ? <Portfolio /> : null}
+       {this.props.showStockQuotes == "true" ? <StockQuotes /> : null}
+       {this.props.showTrade == "true" ? <Trade /> : null}
+       {this.props.showTransfer == "true" ? <Transfer /> : null}
+       {this.props.showBillPay == "true" ? <BillPay /> : null}
+      </main>
+    )
+    }
+
+}
+
+export default SheckocoMainContent
+
+{ /*
+ <Paper>
         <h2>Please log in</h2>
           <p>Features:</p>
             <ul>
@@ -40,9 +64,4 @@ function SheckocoMainContent()
 <li>+ Quotes</li>
 <li>+ Direct Deposit</li>
       </ul>
-      </Paper>
-    </main>
-  );
-}
-
-export default SheckocoMainContent
+</Paper> */ }
