@@ -19,6 +19,12 @@ function Portfolio(props)
       <Position />
       <Total />
       */}
+    
+      <p>100 shares of AAA at $10 = $1000</p>
+      <p>100 shares of BBB at $20 = $2000</p>
+      <p>100 shares of CCC at $30 = $3000</p>
+      <p>100 shares of DDD at $40 = $4000</p>
+      <p>100 shares of EEE at $50 = $5000</p>
     </div>
   );
 }

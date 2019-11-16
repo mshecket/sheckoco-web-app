@@ -7,10 +7,10 @@ import PaymentIcon from '@material-ui/icons/Payment';
 import TrendingUpIcon from '@material-ui/icons/TrendingUp';
 import SyncAltIcon from '@material-ui/icons/SyncAlt';
 
-function SheckocoFooter() {
+function Footer() {
   return (
     <footer>
-      <BottomNavigation showLabels color='secondary'>
+      <BottomNavigation showLabels color='primary'>
         <BottomNavigationAction label="Portfolio" icon={<BusinessCenterIcon />} />
         <BottomNavigationAction label="Stock Quotes" icon={<TrendingUpIcon />} />
         <BottomNavigationAction label="Trade" icon={<SyncAltIcon />} />
@@ -22,4 +22,4 @@ function SheckocoFooter() {
   );
 }
 
-export default SheckocoFooter
+export default Footer

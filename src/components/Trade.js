@@ -15,6 +15,7 @@ function Trade(props)
   return (
     <div className="trade">
       <h1>Trade</h1>
+      <h2>Orders</h2>
     </div>
   );
 }
