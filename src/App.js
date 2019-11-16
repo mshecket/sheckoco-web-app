@@ -1,15 +1,19 @@
 import React from "react"
 
-import SheckocoHeader from "./components/SheckocoHeader"
-import SheckocoMainContent from "./components/SheckocoMainContent"
-import SheckocoFooter from "./components/SheckocoFooter"
+import Header from "./components/Header"
+import MainContent from "./components/MainContent"
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <div>
-      <SheckocoHeader />
-      <SheckocoMainContent />
-      <SheckocoFooter />
+      <Header />
+      <br/>
+      <MainContent
+        showStockQuotes={"true"}
+      />
+      <br/>
+      <Footer />
     </div>
   );
 }
